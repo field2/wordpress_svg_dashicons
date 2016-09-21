@@ -48,9 +48,11 @@ require_once( ABSPATH . 'wp-admin/admin-header.php' );
 		<p><?php _e( 'Drag the bookmarklet below to your bookmarks bar. Then, when you&#8217;re on a page you want to share, simply &#8220;press&#8221; it.' ); ?></p>
 
 		<p class="pressthis-bookmarklet-wrapper">
-			<a class="pressthis-bookmarklet" onclick="return false;" href="<?php echo htmlspecialchars( get_shortcut_link() ); ?>"><span><?php _e( 'Press This' ); ?></span></a>
+			<a class="pressthis-bookmarklet" onclick="return false;" href="<?php echo htmlspecialchars( get_shortcut_link() ); ?>">
+									<svg class="dashicon" aria-hidden="true"><use xlink:href="/wp-includes/icons/dashicons.svg#dashicons-pressthis"></use></svg>
+									<span><?php _e( 'Press This' ); ?></span></a>
 			<button type="button" class="button button-secondary pressthis-js-toggle js-show-pressthis-code-wrap" aria-expanded="false" aria-controls="pressthis-code-wrap">
-				<span class="dashicons dashicons-clipboard"></span>
+						<svg class="dashicon" aria-hidden="true"><use xlink:href="/wp-includes/icons/dashicons.svg#dashicons-clipboard"></use></svg>
 				<span class="screen-reader-text"><?php _e( 'Copy &#8220;Press This&#8221; bookmarklet code' ) ?></span>
 			</button>
 		</p>
