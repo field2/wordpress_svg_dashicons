@@ -42,7 +42,7 @@
 						<p class="site-description"><?php echo $description; ?></p>
 					<?php endif;
 				?>
-				<button class="secondary-toggle"><svg class="dashicon" aria-hidden="true"><use xlink:href="/wp-includes/icons/dashicons.svg#dashicons-menu"></use></svg>
+				<button class="secondary-toggle"><?php echo wp_icon( 'dashicons-menu' ); ?>
 <?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
 			</div><!-- .site-branding -->
 		</header><!-- .site-header -->
